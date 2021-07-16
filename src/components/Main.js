@@ -1,49 +1,21 @@
 import React, {useState, useEffect} from 'react'
 import Farm from './img/Farm.png'
+import Shop from './img/Shop.png'
+import Logovo from './img/logovo.png'
+import Mine from './img/Mine.png'
+import Mouse from './img/mouse.png'
+import Tower from './img/Tower.png'
+import Wizard from './img/Wizard.png'
+import BackgroundSlider from 'react-background-slider'
 
 function Main(){
-
-    const img = [
-        <img key={Farm} src={Farm} />,
-        <img key={Farm} src={Farm} />,
-        <img key={Farm} src={Farm} />,
-        <img key={Farm} src={Farm} />,
-        <img key={Farm} src={Farm} />,
-    ]
-
-    const [activeIndex, setActiveIndex] = useState(0);
- 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setActiveIndex((current) => {
-                const res = current === img.length - 1 ? 0 : current + 1
-                return res
-            })
-        }, 3000)
-        return () => clearInterval()
-        }, [])
-     
-            const prevImgIndex = activeIndex ? activeIndex - 1 : img.length - 1
-            const nextImgIndex = activeIndex === img.length - 1 ? 0 : activeIndex + 1
-    
-
     return(
         <div className='mainWrapper'>
-            <div className="slider">
-        <div className="slider-img slider-img-prev"
-                key={prevImgIndex}>
-            {img[prevImgIndex]}
-        </div>
-        <div className="slider-img"
-                key={activeIndex}>
-            {img[activeIndex]}
-        </div>
-        <div className="slider-img slider-img-next oh"
-                key={nextImgIndex}>
-            {img[nextImgIndex]}
-        </div>
-    </div>
-            {/* <div class="jumbotron">
+            <BackgroundSlider
+            images={[Farm, Shop, Logovo, Mine, Mouse, Tower, Wizard]}
+            duration={7} transition={1} />
+            <div className='notSlider'>
+            <div class="jumbotron">
                 <h1 class="display-4">N0st3rn server</h1>
                 <p class="lead">Сервер где ты модешь быть диктатором, магом, королём, воином, крестьянином, странствующим торговцем и т.д.</p>
                 <hr class="my-4" />
@@ -65,7 +37,8 @@ function Main(){
                 <div className='navigation'>
 
                 </div>
-            </div> */}
+            </div>
+            </div>
         </div>
     )
 }
