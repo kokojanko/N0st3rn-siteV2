@@ -1,15 +1,16 @@
+
 a{
   text-decoration: none;
-  color: gray;
+  color:rgb(42, 51, 154);
 }
 a:hover{
   color: black;
 }
-
 .sidebar{
   width: calc(100% - 20px);
   margin-left: 10px;
   height: 150px;
+  z-index: 2;
 }
 .sideitem{
   height: 150px;
@@ -23,10 +24,7 @@ a:hover{
   margin-top: 20%;
 }
 .wrapper{
-  height: auto;
-  width: calc(100% - 20px);
-  margin-left: 10px;
-  
+  height: auto;  
 }
 .info{
   height: 200px;
@@ -36,15 +34,86 @@ a:hover{
 .wrapperNav{
   width: 100%;
   height: auto;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+.wrapperNav a:hover{
+  color: rgb(154, 42, 42);
 }
 .navigation{
   width: 20%;
-  height: 500px;
-  display: inline-block;
+  height: 300px;
+  float: left;
   margin-left: 1%;
 }
+.kindomIco{
+  height: 80%;
+  width: 100%;
+  background-image: url();
+}
+.kindomIco img{
+  width: 90%;
+  height: 100%;
+}
+.namekindom{
+  width: 100%;
+  height: 20%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
 .notSlider{
   z-index: 2;
-  color: rgb(189, 60, 60);
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  color: rgb(154, 42, 42);
+}
+.MainInfo1{
+  width: 100%;
+  margin: 0px;
+}
+.infoMain2{
+  width: 100%;
+  margin: 0px;
+  height: 100%;
+  text-align: center;
+}
+.ccard-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ccard {
+  width: 20ch;
+  height: 20ch;
+  margin-top: 20%;
+  background: hotpink;
+  border-radius: 5px;
+  transition: box-shadow 0.5s;
+  will-change: transform;
+}
+.infofirst{
+  width: 45%;
+  height: auto;
+  float: left;
+  margin-top: 5%;
+  margin-left: 2%;
+}
+.sliderWrapper{
+  width: 45%;
+  height: 300px;
+  float: left;
+  color: #fff;
+  margin-top: 5%;
+  font-size: 5em;
+  margin-left: 5%;
+}
+.KindomMiniInfo{
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
 }

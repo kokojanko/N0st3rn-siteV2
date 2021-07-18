@@ -1,0 +1,139 @@
+<BackgroundSlider
+            images={[Tower, Shop, Logovo, Mine, Mouse, Farm, Wizard]}
+            duration={7} transition={1} />
+
+
+            <div className='notSlider clearfix'>
+            <Spring
+            from={{opacity: 0}}
+            to={{opacity: 1}}
+            delay={5000}
+            >
+                {
+                    styles =>(
+                        <animated.div style={styles} class="jumbotron">
+                            <h1 class="display-4">N0st3rn server</h1>
+                            <p class="lead">Серввер полный приключений, магии, событий, квестов и королевств</p>
+                            <hr class="my-4" />
+                            <p>Здесь ты можешь быть кем захочешь и с кем захочешь.</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#info1" role="button">узнать больше</a>
+                            </p>
+                        </animated.div>
+                    )
+                }
+            </Spring>
+            <div className="wrapperNav">
+                <Spring
+                from={
+                    {opacity: 0},
+                    {x: -2000}
+                }
+                to={
+                    {opacity: 1},
+                    {x: 0}
+                }
+                delay={1000}
+                config={config.gentle}
+                >
+                {
+                    kindomsNavStyle =>(
+                        <animated.div style={kindomsNavStyle} class="navigation">
+                        <a href="/Void">
+                            <div className="kindomIco">
+                            <img src={Sword} />
+                            </div>
+                            <div className='namekindom'>
+                            Королевсто Бездонных
+                            </div>
+                        </a>
+                    </animated.div>
+                    )
+                }
+                </Spring>
+                <Spring
+                from={
+                    {opacity: 0},
+                    {x: -2000}
+                }
+                to={
+                    {opacity: 1},
+                    {x: 0}
+                }
+                delay={2000}
+                config={config.gentle}
+                >
+                {
+                    kindomsNavStyle =>(
+                    <animated.div style={kindomsNavStyle} class="navigation">
+                        <a href="/Search">
+                            <div className="kindomIco">
+                                <img src={Mehanizm} />
+                            </div>
+                            <div className='namekindom'>
+                            Королевсто Ищущих
+                            </div>
+                        </a>
+                    </animated.div>
+                    )
+                }
+                </Spring>
+                <Spring
+                from={
+                    {opacity: 0},
+                    {x: -2000}
+                }
+                to={
+                    {opacity: 1},
+                    {x: 0}
+                }
+                delay={3000}
+                config={config.gentle}
+                >
+                {
+                    kindomsNavStyle =>(
+                        <animated.div style={kindomsNavStyle} class="navigation">
+                            <a href="/Lighted">
+                            <div className="kindomIco">
+                                <img src={Stuff} />
+                            </div>
+                            <div className='namekindom'>
+                            Королевсто Просвещённых
+                            </div>
+                        </a>
+                    </animated.div>
+                    )
+                }
+                </Spring>
+                <Spring
+                from={
+                    {opacity: 0},
+                    {x: -2000}
+                }
+                to={
+                    {opacity: 1},
+                    {x: 0}
+                }
+                delay={4000}
+                config={config.default}
+                >
+                {
+                    kindomsNavStyle =>(
+                    <animated.div style={kindomsNavStyle} class="navigation">
+                        <a href="/Shopers">
+                            <div className="kindomIco">
+                                <img src={Shoper} />
+                            </div>
+                            <div className='namekindom'>
+                            Странствующие торговцы
+                            </div>
+                        </a>
+                    </animated.div>
+                    )
+                }
+                </Spring>
+            </div>
+            </div>
+            <div className="infoMain">
+                LUL
+            </div>
