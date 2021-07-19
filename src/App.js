@@ -1,7 +1,6 @@
-import React, {useEffect} from "react"
+import React from "react"
 import './App.css';
 import Main from './components/Main';
-import Sidebar from './components/Sidebar';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 function App() {

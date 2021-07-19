@@ -4,19 +4,19 @@ function Sidebar(){
     return(
         <div>
             <div className='sideitem'>
-                <h1>-- <b> Server</b></h1>
+                <p><h1>Undefind project</h1></p>
             </div>
             <div className='sideitem'>
                  <a href='/'><p>Главная</p></a>
             </div>
             <div className='sideitem'>
-                <p>Home</p>
+                <a href='/Teeeest'><p>Home</p></a>
             </div>
             <div className='sideitem'>
-                <p>Home</p>
+                <a><p>Home</p></a>
             </div>
             <div className='sideitem'>
-                <p>Home</p>
+                <a><p>Home</p></a>
             </div>
         </div>
     )

@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { useSpring, animated, config } from "@react-spring/web";
-import {useControls} from 'leva' 
+import Ork from './img/Ork.png'
 
 const calc = (x, y, rect) => [
   -(y - rect.top - rect.height / 2) / 5,
@@ -11,13 +11,9 @@ const trans = (x, y, s) =>
   `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
 export default function Card() {
-  const configList = Object.keys(config);
   const ref = useRef(null);
   const [xys, set] = useState([0, 0, 1]);
-  const { preset } = useControls({
-    preset: { value: "default", options: configList }
-  });
-  const props = useSpring({ xys, config: config[preset] });
+  const props = useSpring({xys});
 
   return (
     <div className="ccard-main" ref={ref}>
@@ -29,7 +25,9 @@ export default function Card() {
           const rect = ref.current.getBoundingClientRect();
           set(calc(e.clientX, e.clientY, rect));
         }}
-      />
+      >
+        <img src={Ork} />
+        </animated.div>
     </div>
   );
 }
