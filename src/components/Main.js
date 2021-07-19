@@ -42,24 +42,6 @@ function Main(){
                     images={[Tower, Shop, Logovo, Mine, Mouse, Farm, Wizard]}
                     duration={7} transition={1} />
                     <div className='notSlider clearfix'>
-                    <Spring
-                    from={{opacity: 0}}
-                    to={[
-                        {opacity: 1},
-                    ]}
-                    delay={500}
-                    >
-                        {
-                            styles =>(
-                                <animated.div style={styles} class="jumbotron">
-                                    <h1 class="display-4">Undefind project</h1>
-                                    <p class="lead">Серввер полный приключений, магии, событий, квестов и королевств</p>
-                                    <hr class="my-4" />
-                                    <p>Здесь ты можешь быть кем захочешь и с кем захочешь.</p>
-                                </animated.div>
-                            )
-                        }
-                    </Spring>
                     <div className="wrapperNav">
 
                         {/* скрытие показ королевства бездонных */}
@@ -132,10 +114,10 @@ function Main(){
                             })
                             }>
                             {(styleFind, item) =>
-                            item && <animated.div style={styleFind} className="ShownKindom"><h4>Ищущие &ndash; занимаюция поиском изобретений и различных технологий. Они в своём сознании настолько приисполнились что уже словно миллионы миллиардов изобретений открыли.
+                            item && <animated.div style={styleFind} className="ShownKindom"><h5>Ищущие &ndash; занимающиеся поиском изобретений и различных технологий. Они в своём сознании настолько приисполнились что уже словно миллионы миллиардов изобретений открыли.
                                 <br /> <br />    
                                 Не счесть их силу хоть и не так много знаний дожило до нашего времени
-                            </h4></animated.div>
+                            </h5></animated.div>
                             }
                         </Transition>
                             <Spring
@@ -283,6 +265,24 @@ function Main(){
         offset={0.99}
         speed={1.5}
         >
+            <Spring
+                    from={{opacity: 0}}
+                    to={[
+                        {opacity: 1},
+                    ]}
+                    delay={500}
+                    >
+                        {
+                            styles =>(
+                                <animated.div style={styles} class="jumbotron">
+                                    <h1 class="display-4">Undefined project</h1>
+                                    <p class="lead">Серввер полный приключений, магии, событий, квестов и королевств</p>
+                                    <hr class="my-4" />
+                                    <p>Будь на одной из 4-х сторон или придумай свою.</p>
+                                </animated.div>
+                            )
+                        }
+                    </Spring>
             <div className="MainInfo1">
                 <div className="clearfix">
                     <div className="infofirst">
