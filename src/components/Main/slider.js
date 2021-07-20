@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import { useTransition, animated, config } from 'react-spring'
-import Farm from './img/Farm.png'
-import Wizard from './img/Wizard.png'
+import Farm from '../img/Farm.png'
+import Wizard from '../img/Wizard.png'
 
 function Toggle() {
     const [toggle, set] = useState(false)

@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { useSpring, animated, config } from "@react-spring/web";
-import StormStuff from './img/StormStuff.png'
+import Ork from '../img/Ork.png'
 
 const calc = (x, y, rect) => [
   -(y - rect.top - rect.height / 2) / 5,
@@ -26,7 +26,7 @@ export default function Card() {
           set(calc(e.clientX, e.clientY, rect));
         }}
       >
-        <img src={StormStuff} />
+        <img src={Ork} />
         </animated.div>
     </div>
   );

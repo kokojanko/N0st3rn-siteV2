@@ -33,11 +33,14 @@ a:hover{
 .wrapperNav{
   width: 100%;
   height: auto;
-  z-index: 0;
   margin-top: 5%;
 }
-
+.greetings{
+  float: right;
+  margin-right: 10% ;
+}
 .navigation{
+  border: solid silver 2px;
   width: 100%;
   height: 300px;
   margin-top: 15%;
@@ -69,7 +72,6 @@ a:hover{
   width: 100%;
   margin: 0px;
   height: 100%;
-  text-align: center;
 }
 .ccard-main {
   display: flex;
@@ -129,6 +131,10 @@ a:hover{
 .ShownKindom{
   margin-top: 5%;
   transition: 0.7s;
+  float: left;
+  width: 20%;
+  text-align: center;
+  margin-left: 5%;
 }
 .mt{
   margin-top: 10%;
@@ -147,4 +153,52 @@ a:hover{
 }
 .WrapperCard:nth-child(2){
   margin-left: 10%;
+}
+.discordWrapper{
+  width: 20%;
+  height: 500px;
+  float: left;
+  margin-top: 50px;
+}
+.Command{
+  width: 25%;
+  height: 500px;
+  float: left;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+.Command p {
+  margin-top: 30px;
+}
+.TCenter{
+  text-align: center;
+}
+.Comming{
+  width: 40%;
+  height: 500px;
+  float: left;
+  margin-left: 4%;
+  margin-top: 50px;
+}
+.Comming li{
+  list-style: none;
+}
+.teeest{
+  background-color: black;
+  color: white;
+}
+.KindomWrapper{
+  width: 100%;
+  height: 500px;
+}
+.KindomWrapper button{
+  font-size: 4em;
+}
+.OpenButton{
+  position: absolute;
+}
+@media screen and (max-width: 1090px) {
+  .ShownKindom h4{
+    font-size: 1em;
+  }
 }

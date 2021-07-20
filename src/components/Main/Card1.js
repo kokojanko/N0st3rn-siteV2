@@ -1,8 +1,6 @@
 import { useRef, useState } from "react";
 import { useSpring, animated, config } from "@react-spring/web";
-import VoidEater from './img/VoidEater.png'
-import VoidSword from './img/VoidSword.png'
-
+import VoidEater from '../img/VoidEater.png'
 const calc = (x, y, rect) => [
   -(y - rect.top - rect.height / 2) / 5,
   (x - rect.left - rect.width / 2) / 5,
@@ -27,7 +25,7 @@ export default function Card() {
           set(calc(e.clientX, e.clientY, rect));
         }}
       >
-        <img src={VoidSword} />
+        <img src={VoidEater} />
         </animated.div>
     </div>
   );
