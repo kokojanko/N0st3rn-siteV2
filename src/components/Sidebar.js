@@ -10,13 +10,13 @@ function Sidebar(){
                  <a href='/'><p>Главная</p></a>
             </div>
             <div className='sideitem'>
-                <a href='/Teeeest'><p>Home</p></a>
+                <a href='/'><p>Home</p></a>
             </div>
             <div className='sideitem'>
-                <a><p>Home</p></a>
+                <a href='/'><p>Home</p></a>
             </div>
             <div className='sideitem'>
-                <a><p>Home</p></a>
+                <a href='/faq'><p>FAQ</p></a>
             </div>
         </div>
     )

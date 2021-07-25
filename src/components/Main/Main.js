@@ -11,9 +11,6 @@ import Mine from '../img/Mine.png'
 import Mouse from '../img/mouse.png'
 import Tower from '../img/Tower.png'
 import Wizard from '../img/Wizard.png'
-import Sword from '../img/sword.png'
-import Stuff from '../img/Stuff.png'
-import Mehanizm from '../img/Mehanizm.png'
 import Card from './Card'
 import Card1 from './Card1'
 import Card2 from './Card2'
@@ -21,10 +18,6 @@ import Card3 from './Card3'
 
 function Main(){
     const [Open, setOpen] = useState(false)
-    // const [ShowVoid, setShowVoid] = useState(false)
-    // const [ShowFind, setShowFind] = useState(false)
-    // const [ShowUnderstand, setShowUnderstand] = useState(false)
-    // const[ShowStranger, setShowStranger] = useState(false)
     const FirstRef = useRef(null)
 
     return(
@@ -34,13 +27,13 @@ function Main(){
                 offset={0}
                 speed={2}
             >
-                          <header className="sidebar">
-                            <Sidebar />
-                        </header>
+                <header className="sidebar">
+                    <Sidebar />
+                </header>
                 <div className='mainWrapper'>
                     <BackgroundSlider
-                    images={[Tower, Shop, Logovo, Mine, Mouse, Farm, Wizard]}
-                    duration={7} transition={1} />
+                    images={[Shop, Tower, Logovo, Mine, Mouse, Farm, Wizard]}
+                    duration={6} transition={1} />
                     <div className='notSlider clearfix'>
                     <div className="wrapperNav">
                     <Transition
@@ -54,10 +47,10 @@ function Main(){
                         }>
                         {(styleKindoms, item) =>
                         item && 
-                        <animated.div style={styleKindoms} class="jumbotron greetings">
-                            <h1 class="display-4">Undefined project</h1>
-                            <hr class="my-4" />
-                            <p class="lead">IP: /////////////</p>
+                        <animated.div style={styleKindoms} className="jumbotron greetings">
+                            <h1 className="display-4">Undefined project</h1>
+                            <hr clclassNameass="my-4" />
+                            <p className="lead">IP: /////////////</p>
                         </animated.div>
                         }
                     </Transition>
@@ -131,9 +124,10 @@ function Main(){
                                                     </h4>
                                                     </div> 
                                                     <div className="ShownKindom">
-                                                    <h4>Просвещённые &ndash; маги, чья коллекстивная мощь сравнима с метеоритом несущимся на землю.
-                                                    <br /> <br />
-                                                    Все маги хоть и сильны но не способоны обращатся с другим оружием, а на изучение одного заклинания уходит пол жизни.
+                                                    <h4>
+                                                        Странствующие торговцы &ndash; равнодушная ко всем гильдия. Этих ребят волнуют только прибыль, ночлег и еда. Хотя иногда они могут принести и вправду полезную вещь.
+                                                        <br /> <br />
+                                                         Если ты в этой банде главные враги это свои же соплеменники которые отнимают покумателей :)  
                                                     </h4>
                                                     </div>                                           
                                                 </animated.div>
@@ -152,8 +146,11 @@ function Main(){
                 </div>
         </ParallaxLayer>
         <ParallaxLayer 
-        offset={0.99}
+        offset={0.90}
         speed={1.5}
+        style={
+            {background: "white"}
+        }
         >
             <Spring
                     from={{opacity: 0}}
@@ -164,10 +161,10 @@ function Main(){
                     >
                         {
                             styles =>(
-                                <animated.div style={styles} class="jumbotron">
-                                    <h1 class="display-4">Undefined project</h1>
-                                    <p class="lead">Серввер полный приключений, магии, событий, квестов и королевств</p>
-                                    <hr class="my-4" />
+                                <animated.div style={styles} className="jumbotron">
+                                    <h1 className="display-4">Undefined project</h1>
+                                    <p className="lead">Серввер полный приключений, магии, событий, квестов и королевств</p>
+                                    <hr className="my-4" />
                                     <p>Будь на одной из 4-х сторон или придумай свою.</p>
                                 </animated.div>
                             )
@@ -197,16 +194,16 @@ function Main(){
                         <hr />
                     </div>   
                     <div className='sliderWrapper'>
-                        <div class="WrapperCard">
+                        <div className="WrapperCard">
                             <Card />
                         </div>
-                        <div class="WrapperCard">
+                        <div className="WrapperCard">
                             <Card1 />
                         </div>
-                        <div class="WrapperCard">
+                        <div className="WrapperCard">
                             <Card2 />
                         </div>
-                        <div class="WrapperCard">
+                        <div className="WrapperCard">
                             <Card3 />
                         </div>
                     </div>   
