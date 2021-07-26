@@ -4,6 +4,7 @@ import './App.css';
 import Main from './components/Main/Main';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Faq from './components/FAQ/Faq'
+import BottomLess from "./components/Bottomless/BottomLess";
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
                 <Switch>
                   <Route exact path='/' component={Main} />
                   <Route exact path='/faq' component={Faq} />
+                  <Route exact path='/bottomless' component={BottomLess} />
                 </Switch>
                 </main>
                 <footer className='info'>
